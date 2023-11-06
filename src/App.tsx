@@ -50,7 +50,7 @@ function App() {
   ];
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className='dark:bg-gray-900'>
+      <div className='dark:bg-gray-900 h-screen'>
         <header className="flex items-center fixed
         w-full justify-between 
         border-b-[1px] bg-white dark:bg-gray-900">
@@ -76,13 +76,13 @@ function App() {
                 onChange={setEnabled}
                 onClick={() => setDarkMode(!darkMode)}
                 className={`${enabled ? 'bg-gray-100' : 'bg-gray-900'}
-          relative inline-flex h-[19px] w-[32px] shrink-0 cursor-pointer rounded-full border-2 border-gray-900 dark:border-gray-100 transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white/75`}
+          relative inline-flex h-[19px] w-[32px] shrink-0 cursor-pointer rounded-full border-2 border-gray-400 dark:border-gray-400 transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white/75`}
               >
                 <span className="sr-only">Thème Sombre</span>
                 <span
                   aria-hidden="true"
-                  className={`${enabled ? 'translate-x-3 bg-gray-900' : 'translate-x-0 bg-gray-100 dark:border-gray-900 dark:border-4}'}
-            pointer-events-none inline-block h-[15px] w-[15px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                  className={`${enabled ? 'translate-x-3' : 'translate-x-0}'}
+            pointer-events-none inline-block h-[15px] w-[15px] transform dark:bg-gray-900 bg-gray-100 border border-gray-950 dark:border-gray-100 rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                 />
               </Switch>
             </div>
@@ -125,6 +125,23 @@ function App() {
                     ))}
                   </div>
                 </div>
+              </div>
+              <div className='border-b border-gray-200 dark:border-gray-700 mt-5'></div>
+              <div className="p-1 pt-4 rounded-full hover:bg-gray-300 h-[30px] w-[30px] mt-4">
+                <Switch
+                  checked={enabled}
+                  onChange={setEnabled}
+                  onClick={() => setDarkMode(!darkMode)}
+                  className={`${enabled ? 'bg-gray-100' : 'bg-gray-900'}
+          relative inline-flex h-[19px] w-[32px] shrink-0 cursor-pointer rounded-full border-2 border-gray-400 dark:border-gray-400 transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white/75`}
+                >
+                  <span className="sr-only">Thème Sombre</span>
+                  <span
+                    aria-hidden="true"
+                    className={`${enabled ? 'translate-x-3' : 'translate-x-0}'}
+            pointer-events-none inline-block h-[15px] w-[15px] transform dark:bg-gray-900 bg-gray-100 border border-gray-950 dark:border-gray-100 rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                  />
+                </Switch>
               </div>
             </Dialog.Panel>
           </Dialog>

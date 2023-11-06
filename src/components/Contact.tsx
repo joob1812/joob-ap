@@ -28,7 +28,7 @@ function Contact() {
     }
 
     return (
-        <div className='h-screen dark:bg-gray-900'>
+        <div className='h-full dark:bg-gray-900'>
             <div className="ml-[90px] grid grid-cols-1 md:grid-cols-3">
                 <div className="col-span-2 ">
                     <div className='flex justify-center flex-col items-center'>
@@ -127,13 +127,13 @@ function Contact() {
                     </div>
 
                 </div>
-                <div className="hidden mr-2 md:block md:mt-[140px] lg:mt-[120px] mt-[140px]">
+                <div className="hidden mr-2 mx-10 md:block md:mt-[140px] lg:mt-[110px] mt-[140px]">
 
                     <div
                         className="
                 text-center flex flex-col
                 justify-center items-center
-                rounded-xl border border-yellow-300 lg:p-6 p-6 dark:bg-gray-800"
+                rounded-xl border border-yellow-300 lg:p-3 p-6 dark:bg-gray-800"
                     >
                         <h3 className="lg:text-2xl text-lg font-bold pb-4  dark:text-gray-100">
                             {Strings.INFO}
