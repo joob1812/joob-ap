@@ -55,7 +55,7 @@ function App() {
         w-full justify-between 
         border-b-[1px] bg-white dark:bg-gray-900">
           <div className='w-[90px] h-[90px] bg-gradient-to-t from-gray-500 to-gray-900'>
-            <a href="/"><img src="./public/Logo_SC.png"
+            <a href="/"><img src="/Logo_SC.png"
               alt="Le logo de JoOb" className='p-2' /></a>
           </div>
           <div className='hidden lg:flex lg:gap-x-14 '>
@@ -98,7 +98,7 @@ function App() {
                   <span className="sr-only">JoOb Company</span>
                   <img
                     className="h-8 w-auto hover:scale-110 transition-all"
-                    src="./public/Logo_SC.png"
+                    src="/Logo_SC.png"
                     alt="Le logo de JoOb"
                   />
                 </a>
@@ -127,7 +127,7 @@ function App() {
                 </div>
               </div>
               <div className='border-b border-gray-200 dark:border-gray-700 mt-5'></div>
-              <div className="p-1 pt-4 rounded-full hover:bg-gray-300 h-[30px] w-[30px] mt-4">
+              <div className="p-1 pt-4 h-[30px] w-[30px] mt-4">
                 <Switch
                   checked={enabled}
                   onChange={setEnabled}

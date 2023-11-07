@@ -57,7 +57,7 @@ function Contact() {
                     </div>
 
                     <div
-                        className="md:hidden mt-[70px] mb-[50px] px-24 mx-32                text-center flex flex-col
+                        className="md:hidden mt-[70px] mb-[50px] px-24 mx-32 text-center flex flex-col
                 justify-center items-center
                 rounded-xl border border-yellow-300 p-1 dark:bg-gray-800"
                     >
