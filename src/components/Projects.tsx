@@ -1,7 +1,7 @@
 
 function Projects() {
   return (
-    <div className="ml-[90px] grid grid-cols-1">
+    <div className="ml-[90px] grid grid-cols-2">
       <div className="col-span-2 mt-[60px] ">
         <div className='dark:bg-gray-900'>
           <div className='hscreen flex justify-center flex-col items-center'>

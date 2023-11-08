@@ -6,7 +6,7 @@ import Logo_SC from "/Logo_SC.png";
 
 function About() {
     return (
-        <div className="ml-[90px] grid grid-cols-1 lg:grid-cols-3">
+        <div className="ml-[90px] grid grid-cols-1 lg:grid-cols-3 dark:bg-gray-900">
             <div className="col-span-2 mt-[90px] ">
                 <div className="px-44 text-center flex flex-col items-center">
                     <div className="h-[120px] border-r-[1px]" />
@@ -30,12 +30,12 @@ function About() {
                         <div className="w-full border-[1px] mx-4 mt-[-2px]"></div>
                         <div className="w-[20px] h-[7px] bg-yellow-600 rounded-full"></div>
                     </div>
-                    <div className="lg:flex lg:flex-col md:justify-center px-24">
+                    <div className="lg:flex lg:flex-col md:justify-center">
                         <div
                             className="
                 text-center flex flex-col
                 justify-center items-center
-                rounded-xl border border-gray-300
+                rounded-xl border border-gray-200 dark:border-gray-500
                 my-5 p-10 bg-gray-100/50 dark:bg-gray-800"
                         >
                             <img
@@ -44,13 +44,13 @@ function About() {
                     w-[90px] h-[90px] p-3 hover:scale-110
                     transition-all cursor-pointer"
                             />
-                            <h3 className="text-lg font-medium pt-8 pb-2  dark:text-gray-900">
+                            <h3 className="md:text-lg text-sm font-medium pt-8 pb-2  dark:text-gray-300">
                                 {Strings.ETAB1}
                             </h3>
-                            <p className="py-2  text-yellow-600 dark:text-yellow-50">
+                            <p className="py-2 md:text-[18px] text-[15px]  text-yellow-600 dark:text-yellow-50">
                                 {Strings.AN1}
                             </p>
-                            <p className="py-1 text-yellow-900 font-serif dark:text-stone-800">
+                            <p className="py-1 md:text-[16px] text-[13px] text-yellow-900 font-serif dark:text-yellow-100">
                                 {Strings.DIPLOME1}
                             </p>
                         </div>
@@ -58,7 +58,8 @@ function About() {
                             className="
                 text-center flex flex-col
                 justify-center items-center
-                rounded-xl border border-gray-300 my-5 p-10 bg-gray-100/50 dark:bg-gray-800"
+                rounded-xl border border-gray-200 dark:border-gray-500
+                my-5 p-10 bg-gray-100/50 dark:bg-gray-800"
                         >
                             <img
                                 src={Logo_SC}
@@ -66,13 +67,13 @@ function About() {
                     w-[90px] h-[90px] p-3 hover:scale-110
                     transition-all cursor-pointer"
                             />
-                            <h3 className="text-lg font-medium pt-8 pb-2  dark:text-gray-900">
+                            <h3 className="md:text-lg text-sm font-medium pt-8 pb-2  dark:text-gray-300">
                                 {Strings.ETAB2}
                             </h3>
-                            <p className="py-2  text-yellow-600 dark:text-yellow-50">
+                            <p className="py-2 md:text-[18px] text-[15px]  text-yellow-600 dark:text-yellow-50">
                                 {Strings.AN2}
                             </p>
-                            <p className="py-1 text-yellow-900 font-serif dark:text-stone-800">
+                            <p className="py-1 md:text-[16px] text-[13px] text-yellow-900 font-serif dark:text-yellow-100">
                                 {Strings.DIPLOME2}
                             </p>
                         </div>
@@ -80,7 +81,8 @@ function About() {
                             className="
                 text-center flex flex-col
                 justify-center items-center
-                rounded-xl border border-gray-300 my-5 p-10 bg-gray-100/50 dark:bg-gray-800"
+                rounded-xl border border-gray-200 dark:border-gray-500
+                my-5 p-10 bg-gray-100/50 dark:bg-gray-800"
                         >
                             <img
                                 src={Logo_SC}
@@ -88,13 +90,13 @@ function About() {
                     w-[90px] h-[90px] p-3 hover:scale-110
                     transition-all cursor-pointer"
                             />
-                            <h3 className="text-lg font-medium pt-8 pb-2  dark:text-gray-900">
+                            <h3 className="md:text-lg text-sm font-medium pt-8 pb-2  dark:text-gray-300">
                                 {Strings.ETAB3}
                             </h3>
-                            <p className="py-2  text-yellow-600 dark:text-yellow-50">
+                            <p className="py-2 md:text-[18px] text-[15px]  text-yellow-600 dark:text-yellow-50">
                                 {Strings.AN3}
                             </p>
-                            <p className="py-1 text-yellow-900 font-serif dark:text-stone-800">
+                            <p className="py-1 md:text-[16px] text-[13px] text-yellow-900 font-serif dark:text-yellow-100">
                                 {Strings.DIPLOME3}
                             </p>
                         </div>
@@ -102,7 +104,8 @@ function About() {
                             className="
                 text-center flex flex-col
                 justify-center items-center
-                rounded-xl border border-gray-300 my-5 p-10 bg-gray-100/50 dark:bg-gray-800"
+                rounded-xl border border-gray-200 dark:border-gray-500
+                my-5 p-10 bg-gray-100/50 dark:bg-gray-800"
                         >
                             <img
                                 src={Logo_SC}
@@ -110,16 +113,17 @@ function About() {
                     w-[90px] h-[90px] p-3 hover:scale-110
                     transition-all cursor-pointer"
                             />
-                            <h3 className="text-lg font-medium pt-8 pb-2  dark:text-gray-900">
+                            <h3 className="md:text-lg text-sm font-medium pt-8 pb-2  dark:text-gray-300">
                                 {Strings.ETAB4}
                             </h3>
-                            <p className="py-2  text-yellow-600 dark:text-yellow-50">
+                            <p className="py-2 md:text-[18px] text-[15px]  text-yellow-600 dark:text-yellow-50">
                                 {Strings.AN4}
                             </p>
-                            <p className="py-1 text-yellow-900 font-serif dark:text-stone-800">
+                            <p className="py-1 md:text-[16px] text-[13px] text-yellow-900 font-serif dark:text-yellow-100">
                                 {Strings.DIPLOME4}
                             </p>
                         </div>
+
                     </div>
                 </div>
             </div>
