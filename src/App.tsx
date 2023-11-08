@@ -51,6 +51,7 @@ function App() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <div className='dark:bg-gray-900 h-screen'>
+        
         <header className="flex items-center fixed
         w-full justify-between 
         border-b-[1px] bg-white dark:bg-gray-900">
@@ -58,6 +59,7 @@ function App() {
             <a href="/"><img src="/Logo_SC.png"
               alt="Le logo de JoOb" className='p-2' /></a>
           </div>
+          
           <div className='hidden lg:flex lg:gap-x-14 '>
             {menu.map((item) => (
               <div className='cursor-pointer
@@ -115,16 +117,12 @@ function App() {
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6">
                     {menu.map((item) => (
-                      
-                      <a
-                        key={item.name}
-                        href={item.url}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
-                      >
-                        {item.name}
-                      </a>
+                      <div>
+                        <Link to={item.url} onClick={() => setMobileMenuOpen(false)} className='cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'>{item.name}</Link>
+                      </div>
                     ))}
                   </div>
+                  
                 </div>
               </div>
               <div className='border-b border-gray-200 dark:border-gray-700 mt-5'></div>
@@ -146,7 +144,7 @@ function App() {
               </div>
             </Dialog.Panel>
           </Dialog>
-        </header>
+        </header>  
         <SideBar />
         <div>
           <Routes>
@@ -157,7 +155,6 @@ function App() {
             <Route path="/Skills" element={<Skills />} />
           </Routes>
         </div>
-
       </div>
     </div>
   );
