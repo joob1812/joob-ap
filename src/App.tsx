@@ -155,6 +155,17 @@ function App() {
             <Route path="/Skills" element={<Skills />} />
           </Routes>
         </div>
+        <footer className='ml-[90px] mt-[30px] h-60 dark:bg-gray-950 bg-gray-100 text-gray-800 dark:text-gray-300'>
+          <div className='flex flex-col justify-center gap-y-2 py-3'>
+            <h2>Menu</h2>
+            {menu.map((item) => (
+              <div className='cursor-pointer
+              text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200 hover:underline transition-all'>
+                <Link to={item.url}>{item.name}</Link>
+              </div>
+            ))}
+          </div>
+        </footer>
       </div>
     </div>
   );

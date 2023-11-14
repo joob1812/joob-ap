@@ -28,7 +28,8 @@ export default {
     NOM: 'DIOP',
     ADDPHYSIQUE1: 'Diokoul/Khombole/Thiès',
     ADDPHYSIQUE2: 'Grand Standing/Thiès',
-    ADDEMAIL: 'joob.18.12@gmail.com',
+    ADDEMAIL1: 'joob.18.12@gmail.com',
+    ADDEMAIL2: 'diop.moussa@uam.edu.sn',
     TEL1: '784641763',
     TEL2: '704930131',
 
