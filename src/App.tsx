@@ -130,7 +130,7 @@ function App() {
                 <Switch
                   checked={enabled}
                   onChange={setEnabled}
-                  onClick={() => setDarkMode(!darkMode)}
+                  onClick={() => { setDarkMode(!darkMode), setMobileMenuOpen(false) }}
                   className={`${enabled ? 'bg-gray-100' : 'bg-gray-900'}
           relative inline-flex h-[19px] w-[32px] shrink-0 cursor-pointer rounded-full border-2 border-gray-400 dark:border-gray-400 transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white/75`}
                 >

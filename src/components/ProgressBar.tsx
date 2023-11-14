@@ -21,7 +21,7 @@ function ProgressBar() {
     w-1.5 bg-gray-200 fixed
     ml-[-5px] mt-[90px] h-full
     mb-4'>
-            <div className='bg-gradient-to-t from-yellow-600 to-yellow-400 transition-all ease-out duration-1000' style={{ height: `${scrollTop}%` }}>
+            <div className='bg-gradient-to-t from-gray-800 to-gray-400 transition-all ease-out duration-1000' style={{ height: `${scrollTop}%` }}>
 
             </div>
         </div>
