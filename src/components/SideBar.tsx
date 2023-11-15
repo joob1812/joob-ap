@@ -6,7 +6,7 @@ import {
 function SideBar() {
   return (
     <div
-      className='w-[90px] border-r-[1px]
+      className='w-[90px] border-r-[1px] border-yellow-500
     h-screen fixed flex flex-col mt-[90px]
     justify-around items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200'
     >

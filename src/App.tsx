@@ -54,7 +54,7 @@ function App() {
         
         <header className="flex items-center fixed
         w-full justify-between 
-        border-b-[1px] bg-white dark:bg-gray-900">
+        border-b-[1px] border-yellow-500 bg-white dark:bg-gray-900">
           <div className='w-[90px] h-[90px] bg-gradient-to-t from-gray-500 to-gray-900'>
             <a href="/"><img src="/Logo_SC.png"
               alt="Le logo de JoOb" className='p-2' /></a>
@@ -62,8 +62,8 @@ function App() {
           
           <div className='hidden lg:flex lg:gap-x-14 '>
             {menu.map((item) => (
-              <div className='cursor-pointer
-              text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200 hover:underline transition-all'>
+              <div className='cursor-pointer hover:text-yellow-500
+              text-sm font-bold leading-6 text-gray-900 dark:text-gray-200 hover:underline transition-all'>
                 <Link to={item.url}>{item.name}</Link>
               </div>
             ))}
@@ -155,9 +155,8 @@ function App() {
             <Route path="/Skills" element={<Skills />} />
           </Routes>
         </div>
-        <footer className='ml-[90px] mt-[30px] h-60 dark:bg-gray-950 bg-gray-100 text-gray-800 dark:text-gray-300'>
-          <div className='flex flex-col justify-center gap-y-2 py-3'>
-            <h2>Menu</h2>
+        <footer className='ml-[90px] mt-[30px] h-24 dark:bg-gray-950 bg-gray-100 text-gray-800 dark:text-gray-300'>
+          <div className='flex justify-center gap-2 py-3'>
             {menu.map((item) => (
               <div className='cursor-pointer
               text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200 hover:underline transition-all'>
