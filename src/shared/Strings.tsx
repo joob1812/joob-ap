@@ -1,5 +1,5 @@
 export default {
-    ABOUT_HEADING: 'Salut! Je me nomme Pape Moussa,\n Je suis developpeur front-end basé au Sénégal.',
+    ABOUT_HEADING: 'Salut! Je me nomme Pape Moussa,\n Je suis informaticien en cours de formation à lUniversité Amadou Mahtar Mbow de Diamniadio.',
     ABOUT_DESC: 'Je suis surtout trés passioné du Web Design et avec une forte curiosité en la matière. Je suis en ma troisième année de licence d\'ingénieurie informatique à l\'Université Amadou Mahtar Mbow de Diamniadio.',
 
     SERVICES: 'SERVICES',
@@ -50,15 +50,15 @@ export default {
     PHOTOGRAPHIEDESC: "Photographie",
     REPARATION: "Maintenance-Réparation",
     REPARATIONDESC: "Maintenance-Réparation",
+    DESSIN: "Dessin",
+    DESSINDESC: "Dessin",
+    PROD: "Production musicale",
+    PRODDESC: "Production musicale",
     RESOL: "Résolution de problèmes",
     RESOLDESC: "Résolution de problèmes",
     GESTION: "Gestion",
     GESTIONDESC: "Gestion",
     RECHERCHE: "Recherche Documentaire",
     RECHERCHEDESC: "Recherche Documentaire",
-    DESSIN: "Dessin",
-    DESSINDESC: "Dessin",
-    PROD: "Production musicale",
-    PRODDESC: "Production musicale",
 
 }

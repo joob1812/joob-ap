@@ -38,12 +38,7 @@ function Contact() {
         <div className='h-full dark:bg-gray-900'>
             <div className="ml-[90px] grid grid-cols-1 md:grid-cols-3">
                 <div className="col-span-2 ">
-                    <div className='flex justify-center flex-col items-center'>
-                        <div className='h-[120px] border-r-[1px] mt-[90px]' />
-                        <div className='w-[5px] h-[5px] bg-gray-300 rounded-full'></div>
-                    </div>
-
-                    <div className="mt-2 lg:flex lg:flex-col md:justify-center mx-6">
+                    <div className="mt-44 mb-6 lg:flex lg:flex-col md:justify-center mx-6">
                         <div className="flex items-center justify-between rounded-r-3xl pl-10 bg-gray-500 dark:bg-gray-600">
                             <h2 className="text-[18px] text-gray-200 md:text-[24px] font-bold ">
                                 CONTACTS
@@ -55,7 +50,10 @@ function Contact() {
                  border-gray-200 dark:border-gray-500
                 my-2 p-2 bg-gray-100/50 dark:bg-gray-800'>
                             <ul className="space-y-2 list-disc list-inside md:text-[18px] text-[15px]  text-gray-600 dark:text-gray-300">
-                                <BsFillTelephoneFill className='h-5 w-8' />
+                                <div className='flex items-center gap-1'>
+                                    <BsFillTelephoneFill className='h-5 w-8' />
+                                    <h2>Téléphones</h2>
+                                </div>
                                 <li className="flex items-center gap-2 ">
                                     <ul className='list-disc list-inside'>
                                         <li>
@@ -67,7 +65,10 @@ function Contact() {
                                     </ul>
                                 </li>
                                 <h1 className='border-b'></h1>
-                                <MdAlternateEmail className='h-5 w-8' />
+                                <div className='flex items-center gap-1'>
+                                    <MdAlternateEmail className='h-5 w-8' />
+                                    <h2>Addresses Emails</h2>
+                                </div>
                                 <li className="flex items-center gap-2 ">
                                     <ul className='list-disc list-inside'>
                                         <li>
@@ -79,7 +80,10 @@ function Contact() {
                                     </ul>
                                 </li>
                                 <h1 className='border-b'></h1>
-                                <FaHouseUser className='h-5 w-8' />
+                                <div className='flex items-center gap-1'>
+                                    <FaHouseUser className='h-5 w-8' />
+                                    <h2>Addresses Domiciles</h2>
+                                </div>
                                 <li className="flex items-center gap-2 ">
                                     
                                     <ul className='list-disc list-inside'>
@@ -128,7 +132,7 @@ function Contact() {
 
                 </div>
 
-                <div className="hidden md:block lg:mt-44 mt-44 lg:ml-24 md:ml-8">
+                <div className="hidden md:block mt-40 lg:ml-24 md:ml-8">
                     
                     <form className='mt-[10px]' onSubmit={handleSubmit(onSubmit)}>
                         <label className='block mt-4 p-1 font-medium text-gray-900 dark:text-gray-300' htmlFor="subject">Objet du mail</label>

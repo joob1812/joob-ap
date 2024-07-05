@@ -1,27 +1,32 @@
 import Strings from "../shared/Strings";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
-import ProfilePic from "./ProfilePic";
-import ProgressBar from "./ProgressBar";
 import { GiBrain } from "react-icons/gi";
 
 function About() {
+    
     return (
-        <div className="ml-[90px] grid grid-cols-1 lg:grid-cols-3 dark:bg-gray-900">
-            <div className="col-span-2 mt-[90px] ">
+        <div className="ml-[50px] flex dark:bg-gray-900">
+            <div className="mt-[90px] ">
+                <div className="flex gap-4 items-center">
                 <div className="px-2 py-4 text-center flex flex-col items-center">
                     <h2 className="md:text-[44px] text-[26px] text-gray-900 dark:text-gray-200 font-bold">
                         {Strings.ABOUT_HEADING}
                     </h2>
-                    <BiSolidQuoteAltLeft className="bg-gray-500 p-3 text-[44px] rounded-full mt-6 text-white  dark:text-gray-200" />
+                    <BiSolidQuoteAltLeft className="bg-yellow-500 p-3 text-[44px] rounded-full mt-6 text-white  dark:text-gray-200" />
                     <h2 className="my-5 text-gray-500  dark:text-gray-300 text-[14px] md:text-[20px]">
                         {Strings.ABOUT_DESC}
                     </h2>
-                    <BiSolidQuoteAltRight className="bg-gray-500 p-3 text-[44px] rounded-full text-white  dark:text-gray-200" />
+                    <BiSolidQuoteAltRight className="bg-yellow-500 p-3 text-[44px] rounded-full text-white  dark:text-gray-200" />
                     <img src="/Avatar_2.jpg" alt="Avatar Pic"
                         className='w-[150px] h-[150p] lg:hidden block bg-gray-400 p-3 mt-4 rounded-xl shadow-lg' />
-
                 </div>
-                
+                    <div className="hidden lg:block mx-10  ">
+                        <img src="/Profile_1.jpg" alt="Avatar Pic"
+                            className=' bg-yellow-400  p-3 md:p-2 rounded-xl shadow-xl object-cover'
+                        />
+                    </div>
+                </div>
+
                 <div className="mt-12">
                     <div className="flex items-center justify-between rounded-r-3xl mx-20 pl-10 bg-gray-500 dark:bg-gray-600">
                         <h2 className="text-[18px] text-gray-200 md:text-[24px] font-bold ">
@@ -90,10 +95,6 @@ function About() {
 
                     </div>
                 </div>
-            </div>
-            <div className="hidden lg:block">
-                <ProgressBar />
-                <ProfilePic />
             </div>
         </div>
     );
