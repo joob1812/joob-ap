@@ -18,10 +18,10 @@ function Home() {
                     <h2 className='mt-4 text-center text-gray-800 font-medium text-[24px]
                  dark:text-gray-200'>Je suis</h2>
                     <h2><TypeAnimation
-                        className='text-gray-800 font-medium text-[28px]'
+                        className='text-gray-800 font-medium text-[28px]  dark:text-gray-200'
                         sequence={[
                             'Informaticien',
-                            2000, // wait 1s before replacing "Mice" with "Hamsters"
+                            2000, // wait 2s before replacing "Mice" with "Hamsters"
                             'Développeur',
                             2000,
                             'Codeur',
